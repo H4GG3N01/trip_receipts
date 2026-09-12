@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: recibos-viajes
+    runtime: docker
+    plan: starter
+    envVars:
+      - key: SERVICE_TITLE
+        value: Servicio de Transporte Ejecutivo
+      - key: DRIVER_NAME
+        value: Daniel Perez Luna
+      - key: DRIVER_PHONE
+        value: "7202229307"
+      - key: CLIENT_NAME
+        sync: false
+      - key: PASS_ANTONIO
+        sync: false
+      - key: PASS_DANIEL
+        sync: false
+      - key: UPSTASH_REDIS_REST_URL
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
